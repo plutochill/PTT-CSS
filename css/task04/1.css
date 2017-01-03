@@ -19,6 +19,18 @@ header {
     left: 0;
     right: 0;
     top: 0;
+    color: #fff;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .14rem;
+}
+header h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: .16rem;
 }
 footer {
     left: 0;
@@ -27,12 +39,14 @@ footer {
 }
 main {
     position: absolute;
-    top: 0.5rem;
-    bottom: 0.5rem;
+    top: 0.46rem;
+    bottom: 0;
     left: 0;
     right: 0;
-    overflow-y: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
+    background: #eff0f4;
 }
 main .content {
     height: auto;
@@ -40,46 +54,70 @@ main .content {
 }
 
 
-/* skin */
-header {
-    background: #1ca7f1;
-    background: linear-gradient(#1b96d8, #1ca7f1);
-    color: #fff;
+/* global */
+.btn {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
 }
 
-/* icon */
-.icon-wrapper {
-    position: relative;
-    overflow: hidden;
-    float: left;
-    width: 21px;
-    height: 21px;
-    padding: 5px;
-    margin: 0;
-    transform: scale(1, 1);
+/* skin */
+header, .btn {
+    background: #5fc0cd;
+    color: #fff;
 }
-.icon {
-    position: absolute;
+.btn {
+    background: #5fc0cd;
+    transition: background 0.5s;
 }
-.icon:before, .icon:after {
-    content: '';
-    position: absolute;
-    display: block;
+.btn:hover {
+    background: #5bb7c3;
 }
-.icon.arrow-left {
-    margin-left: 3px;
-    margin-top: 10px;
-    width: 16px;
-    height: 1px;
-    background-color: #fff;
+a {
+    color: #5fc0cd;
 }
-.icon.arrow-left:before {
-    width: 10px;
-    height: 10px;
-    border-top: solid 1px #fff;
-    border-right: solid 1px #fff;
-    -webkit-transform: rotate(-135deg);
-    transform: rotate(-135deg);
-    left: 1px;
-    top: -5px;
+
+/* login page */
+.login-row {
+    margin: .1rem 0 0 0;
+    width: 100%;
+    background: #fff;
 }
+.login-row input {
+    box-sizing: border-box;
+    padding: 0 0 0 .8rem;
+    width: 100%;
+    border: 0 none;
+    font-size: .14rem;
+    line-height: 0.5rem;
+    outline: none;
+}
+.login-row input[type=text] {
+    background: url("../../img/task04/icon_mobile.png") no-repeat;
+    background-size: .59rem .5rem;
+}
+.login-row input[type=password] {
+    background: url("../../img/task04/icon_pwd.png") no-repeat;
+    background-size: .59rem .5rem;
+}
+
+.btn-login {
+    margin-top: .1rem;
+    width: 100%;
+    line-height: .5rem;
+    font-size: .16rem;
+    letter-spacing: 1em;
+}
+
+.login-text {
+    padding: 0 1em;
+}
+
+
+
