@@ -25,10 +25,11 @@ header a {
     color: #fff;
     text-decoration: none;
     font-size: .14rem;
+    cursor: pointer;
 }
 header h2 {
     padding: 0;
-    margin: 0;
+    margin: 0 4em;
     text-align: center;
     font-size: .16rem;
 }

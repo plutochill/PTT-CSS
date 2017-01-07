@@ -1,0 +1,197 @@
+/* reset */
+html {
+    font-size: 625%;
+}
+body, p, ul, li, ol {
+    margin: 0;
+    padding: 0;
+}
+ul, li, ol {
+    list-style: none;
+}
+
+
+
+/* layout */
+header, footer {
+    position: fixed;
+    padding: 0.07rem 0.1rem;
+    line-height: 0.32rem;
+    font-size: 0.14rem;
+}
+header {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0.32rem;
+
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .14rem;
+    cursor: pointer;
+}
+header h2 {
+    padding: 0;
+    margin: 0 4em;
+    text-align: center;
+    font-size: .16rem;
+}
+footer {
+    display: flex;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.45rem;
+}
+main {
+    position: absolute;
+    top: 0.46rem;
+    bottom: 0.65rem;
+    left: 0;
+    right: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: #fff;
+}
+main .content {
+    height: auto;
+    font-size: .12rem;
+}
+
+
+
+/* global */
+.btn {
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+.text-important {
+    color: #e26163 !important;
+}
+
+/* skin */
+header {
+    background: #5fc0cd;
+    color: #fff;
+}
+
+a {
+    color: #5fc0cd;
+}
+
+/* module */
+.user-section {
+    position: relative;
+    height: 1.63rem;
+    width: 100%;
+    background: url('../../img/task05/image_bg.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+}
+.user-thumb {
+    position: absolute;
+    left: 0.2rem;
+    top: 50%;
+    margin-top: -0.37rem;
+    width: 0.74rem;
+    height: 0.74rem;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user-thumb img {
+    width: 100%;
+}
+.user-info {
+    position: relative;
+    margin-left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.user-name {
+    font-size: 1.2em;
+}
+.user-pos {
+    margin-top: .05rem;
+    padding: 0 0 0 .2rem;
+    background: url('../../img/task05/icon_pos.png') no-repeat left center;
+    background-size: .12rem;
+}
+.user-form {
+
+}
+.user-form-title {
+    padding: 0 .1rem;
+    height: 0.5rem;
+    line-height: .5rem;
+    border-bottom: 1px solid #ccc;
+}
+.user-form-title span {
+    padding-left: 5px;
+    border-left: 3px solid #5fc0cd;
+}
+.user-form-list {
+    padding: 0 .1rem;
+}
+.user-form-list li {
+    position: relative;
+    padding: .15rem .1rem;
+    min-height: 0.2rem;
+    line-height: .2rem;
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+}
+.user-form-tag {
+    display: inline-block;
+    padding: 0 .1rem 0 .15rem;
+    background: url('../../img/task05/icon_star.png') no-repeat left center;
+    background-size: .12rem;
+}
+.user-form-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5em;
+    border-right: 1px solid #ccc;
+    color: #aaa;
+}
+.user-form-item {
+    margin-left: 6em;
+}
+
+footer {
+    display: flex;
+    padding: .1rem;
+}
+footer > button {
+    flex: 1;
+    height: .45rem;
+    width: 50%;
+    background: #ccc;
+}
+.footer-btn-solid , .footer-btn-hollow {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    background: #5fc0cd;
+    color: #fff;
+    font-size: .16rem;
+}
+.footer-btn-hollow {
+    margin-right: .1rem;
+    background: #fff;
+    color: #5fc0cd;
+    box-shadow: inset 0 0 0 2px #5fc0cd;
+}
