@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<script type="text/javascript">
+    function reqListener () {
+        console.log(this.responseText);
+    }
+
+    var oReq = new XMLHttpRequest();
+    oReq.onload = reqListener;
+    oReq.open("get", "/carrots-ajax/a/article", true);
+    oReq.send();
+</script>
+</body>
+</html>
